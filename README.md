@@ -54,3 +54,9 @@ content
 
 # How To Update Codebase
 content
+
+# Areas of Code that need future work
+content
+
+# Source Control structure (GitHub branches)
+content
