@@ -51,3 +51,6 @@ content
 
 # Future Improvements
 content
+
+# How To Update Codebase
+content
