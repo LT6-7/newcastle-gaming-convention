@@ -42,3 +42,12 @@ content
 
 # Bug Fixes
 content
+
+# Unfinished Features
+content
+
+# Bugs Remaining
+content
+
+# Future Improvements
+content
