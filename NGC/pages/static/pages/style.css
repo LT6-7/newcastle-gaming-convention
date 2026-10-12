@@ -1,0 +1,323 @@
+:root {
+    color-scheme: light;
+    --ink: #FFFFFF;
+    --paper: #f4f3ed;
+    --accent: #b8402e;
+    --header: #e4e9df;
+    --main-colour: #00008B;
+    --purple-color: #800080;
+    --active-underline: #e6b8ff;
+}
+
+/* FIX 1: Changed hyphen (-) to universal selector (*) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    background-image: url('/static/pages/images/Design Photos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body2 {
+    margin: 0;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    background-image: url('/static/pages/images/eventsectionphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.hero-image {
+    min-height: 420px;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url('/static/pages/images/xbox.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1.5rem 0;
+}
+
+header {
+    padding: 2rem;
+    background: var(--main-colour);
+    border-bottom: 4px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand img {
+    height: 3rem;
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.15;
+}
+
+.navbar {
+    margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--purple-color);
+    border-radius: 16px;
+}
+
+.nav-items a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.nav-items.active > a {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    color: var(--main-colour);
+    background-color: var(--active-underline);
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 4px solid var(--purple-color);
+}
+
+main {
+    max-width: 71rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.ticket-booking {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.ticket-booking a {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.ticket-booking a p {
+    margin: 0;
+    color: var(--main-colour);
+    font-weight: 700;
+    text-align: center;
+}
+
+.welcome-message {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple-color);
+    color: var(--ink);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    width: fit-content;
+    min-width: 220px;
+}
+
+.welc-text {
+    color: var(--ink);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.welc-txt {
+    color: var(--main-colour);
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.ticket-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 3px;
+    height: 500px;
+    background-image: url(http://127.0.0.1:8000/static/pages/images/xbox.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.ticket-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    width: min(90%, 480px);
+}
+
+.Tickets-text {
+    color: var(--header);
+    font-size: 1.5rem;
+    margin: 0.35rem 0;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1.5px solid #000000;
+    border-radius: 16px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+.event-card-body{
+    display: flex;
+    align-items: center;
+    padding: 2.25rem;
+    gap: 1.2rem;
+}
+
+.event-logo{
+    width: 210px;
+    height: 210px;
+    min-width: 110px;
+    border: 2px solid #000000;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+}
+
+.event-logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.event-details{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;  
+    text-align: left;
+}
+
+.event-title{
+    margin: 0 0 0 0.34rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.event-room{
+    margin: 0 0 0.35rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.event-time{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.time-icon {
+    font-size: 1.1rem;
+}
+
+.event-footer {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    border-top: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.event-footer:hover {
+    background-color: #f8f8f8;
+}
+
+
+.host-glazing{
+    color: var(--paper);
+}
+
+table {
+    width: 500px;
+    table-layout: fixed;
+}
+
+table, th , td {
+    border: none;
+    border-collapse: collapse;
+}

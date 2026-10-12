@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Newcastle Games Convention">
+    <title>About our Events | Newcastle Games Convention</title>
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}">
+</head>
+<body class="body2">
+
+    <header>
+        <div class="brand">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'pages/images/NCG Logo.jpeg' %}" alt="NGC LOGO">
+            </a>
+            <h1>Newcastle Games Convention</h1>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li class="nav-items"><a href="{% url 'home' %}">Home</a></li>
+				<li class="nav-items active"><a href="{% url 'events' %}" aria-current="page">Events</a></li>
+				<li class="nav-items"><a href="{% url 'hosts' %}">Hosts</a></li>
+				<li class="nav-items"><a href="{% url 'login' %}">Login</a></li>
+			</ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events">
+            <p class="welc-txt">Events</p>
+            <div class="event-card">
+                <div class="event-card-body">
+                    <div class="event-logo"> 
+                        <img src="{% static 'pages/images/microsoft_game_studios.jpg'%}" alt="Microsoft Game Studio Logo">
+                   
+                </div>
+				<div class="event-details">
+					<p class="event-title">Future of X box development</p>
+					<p class="event-room">Room: Main Hall</p>
+					<p class="event-text"><span class="time-icon">🕐</span> 9:00am - 10:00am</p>
+				</div>
+			    </div>
+
+                    <a href="https://www.google.com/maps/place/Newcastle+College,+Scotswood+Rd,+Newcastle+upon+Tyne+NE4+7SA/@54.9665781,-1.6274958,18.59z/data=!4m6!3m5!1s0x487e774eaeb70f35:0xdf62581f63e03ffc!8m2!3d54.9665195!4d-1.6268973!16s%2Fg%2F1_lx98dv?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="event-footer"> <span>Get Directions</span></a>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="event-card">
+                <div class="event-card-body">
+                    <div class="event-logo"> 
+                        <img src="{% static 'pages/images/microsoft_game_studios.jpg'%}" alt="Microsoft Game Studio Logo">
+                   
+                </div>
+				<div class="event-details">
+					<p class="event-title">Future of X box development</p>
+					<p class="event-room">Room: Main Hall</p>
+					<p class="event-text"><span class="time-icon">🕐</span> 10:00am - 11:00am</p>
+				</div>
+			    </div>
+
+                    <a href="https://www.google.com/maps/place/Newcastle+College,+Scotswood+Rd,+Newcastle+upon+Tyne+NE4+7SA/@54.9665781,-1.6274958,18.59z/data=!4m6!3m5!1s0x487e774eaeb70f35:0xdf62581f63e03ffc!8m2!3d54.9665195!4d-1.6268973!16s%2Fg%2F1_lx98dv?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="event-footer"> <span>Get Directions</span></a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

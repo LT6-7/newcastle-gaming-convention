@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Newcastle Games Convention">
+	<title>Newcastle Games Convention</title>
+	<link rel="stylesheet" href="{% static 'pages/style.css' %}">
+</head>
+<body>
+
+	<header>
+		<div class="brand">
+			<a href="#"><img src="{% static 'pages/images/NCG Logo.jpeg' %}" alt="NGC LOGO"></a>
+			<h1>Newcastle Games Convention</h1>
+		</div>
+		<nav class="navbar">
+			<ul>
+				<li class="nav-items active"><a href="{% url 'home' %}" aria-current="page">Home</a></li>
+				<li class="nav-items"><a href="{% url 'events' %}">Events</a></li>
+				<li class="nav-items"><a href="{% url 'hosts' %}">Hosts</a></li>
+				<li class="nav-items"><a href="{% url 'login' %}">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="ticket-booking">
+			<a href="https://www.ticketmaster.co.uk/" target="_blank" rel="noopener noreferrer">
+				<p>Remember to book your tickets before choosing events.</p>
+			</a>
+		</div>
+
+		<section class="welcome-message">
+			<p class="welc-text">Hello User</p>
+		</section>
+
+		<section class="tickets">
+			<p class="welc-txt">Tickets</p>
+			<div class="ticket-images">
+				<div class="ticket-details">
+					<p class="Tickets-text">Booking ref. 3853355</p>
+					<p class="Tickets-text">Friday 3rd October 2026 - 5 nights</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
